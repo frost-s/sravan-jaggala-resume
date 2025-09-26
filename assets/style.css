@@ -1,26 +1,16 @@
 
-/* Reset & base */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 :root{
-  --bg: #ffffff;
-  --fg: #0f172a;
-  --muted: #475569;
-  --accent: #2563eb;
-  --card: #f8fafc;
-  --border: #e2e8f0;
-  --chip: #eef2ff;
-  --print-fg: #000;
+  --bg: #ffffff; --fg: #0f172a; --muted: #475569; --accent: #2563eb;
+  --card: #f8fafc; --border: #e2e8f0; --chip: #eef2ff; --print-fg: #000;
 }
 @media (prefers-color-scheme: dark) {
-  :root{
-    --bg:#0b1220; --fg:#e6e8ee; --muted:#a9b1c6; --accent:#60a5fa; --card:#0f172a; --border:#1f2a44; --chip:#1d243a;
-  }
+  :root{ --bg:#0b1220; --fg:#e6e8ee; --muted:#a9b1c6; --accent:#60a5fa; --card:#0f172a; --border:#1f2a44; --chip:#1d243a; }
 }
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  color: var(--fg);
-  background: radial-gradient(1200px 800px at 100% -10%, #e0f2fe22, transparent 60%), var(--bg);
+  color: var(--fg); background: radial-gradient(1200px 800px at 100% -10%, #e0f2fe22, transparent 60%), var(--bg);
   line-height: 1.6;
 }
 .container{ max-width: 980px; margin: 0 auto; padding: 24px; }
@@ -39,7 +29,6 @@ body {
 .btn:hover{ border-color: var(--accent); color: var(--accent); }
 .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px;}
 .chip{ font-size:12px; padding:6px 10px; border:1px solid var(--border); border-radius:999px; background:var(--chip); }
-
 .section{ margin-top: 28px; }
 .section .card{
   border:1px solid var(--border); background: var(--card); border-radius:16px; padding: 22px;
@@ -48,17 +37,9 @@ body {
 .section h2{ margin:0 0 12px; font-size: 20px; letter-spacing: .3px; }
 ul{ padding-left: 20px; margin: 0; }
 li{ margin: 6px 0; }
-
-.grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-
 .footer{ margin: 28px 0; text-align:center; color: var(--muted); font-size: 12px; }
-
-kbd{ background: var(--chip); padding: 2px 6px; border-radius: 6px; border:1px solid var(--border); font-size: 12px; }
 a{ color: var(--accent); text-decoration: none; }
 a:hover{ text-decoration: underline; }
-
-/* Print styles */
 @media print{
   body{ background:#fff; color: var(--print-fg); }
   .btn, .actions { display:none !important; }
