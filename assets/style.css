@@ -49,3 +49,8 @@ ul{padding-left:20px;margin:0}li{margin:6px 0}
 @media print{.topnav,.sidebar{display:none}.container{padding:0}.card{box-shadow:none}}
 .reveal{opacity:0;transform:translateY(8px);animation:reveal .6s ease forwards;animation-timing-function:cubic-bezier(.25,.1,.25,1)}
 @keyframes reveal{to{opacity:1;transform:none}}
+
+.sidebar .avatar {
+  display: block;
+  margin: 0 auto 10px;
+}
