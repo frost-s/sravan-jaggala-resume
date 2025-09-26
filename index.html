@@ -4,40 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume – Resume</title>
-  <meta name="description" content="Academic resume of Resume for hosting on GitHub Pages." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/style.css" />
+  <meta name="description" content="Resume – academic resume." />
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div class="title">
+      <div>
         <h1>Resume</h1>
         <div class="muted"></div>
-        <div class="chips">
-          <span class="chip">Academic</span>
-          <span class="chip">Power BI</span>
-          <span class="chip">Data Analytics</span>
-        </div>
       </div>
-      <div class="actions">
-        <button class="btn" id="printBtn" title="Print / Save as PDF">Print</button>
-        <a class="btn" href="Sravan_Jaggala_Resume.docx" download>Download DOCX</a>
-      </div>
+      <div><a class="muted" href="Sravan_Jaggala_Resume.docx" download>Download DOCX</a></div>
     </header>
 
     <section class="section">
-      <div class="card">
-        <h2>Full Resume</h2>
+      <div class="card resume">
         
       </div>
     </section>
-    
-    <footer class="footer">
-      © <span id="year"></span> Resume. Built for academic use. Hosted on GitHub Pages.
-    </footer>
+
+    <div class="footer">© <span id="year"></span> Resume • GitHub Pages</div>
   </div>
   <script src="assets/script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
