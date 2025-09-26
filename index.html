@@ -4,57 +4,68 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sravan Jaggala – Resume</title>
-  <meta name="description" content="Sravan Jaggala – academic resume web page" />
+  <meta name="description" content="Sravan Jaggala – academic resume" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="topnav">
+  <header class="hero">
+    <div class="aurora"></div>
+    <div class="glass">
+      <h1 class="name">Sravan Jaggala</h1>
+      <div class="subtle">Hyderabad, India</div>
+      <div class="badges">
+        <span class="badge">Academic</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">Data Analytics</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav">
     <div class="inner">
-      <div class="brand">Sravan Jaggala</div>
-      <nav class="navlinks">
-        <a href="#about">About</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
-  <div class="container">
-    <div class="layout">
-      <aside class="sidebar reveal" style="--delay:.05">
-        <img class="avatar" src="assets/profile.png" alt="Profile photo of Sravan Jaggala" onerror="this.outerHTML='<div class=\'avatar\'>Add Photo</div>'"/>
-        <h2 style="margin:.2rem 0">Sravan Jaggala</h2>
-        <div class="meta">Hyderabad, India</div>
-        <div class="linkcol">
-          <a href="tel:+91 98444 34103">+91 98444 34103</a>
-          <a href="mailto:sravan.jaggala@outlook.com">sravan.jaggala@outlook.com</a>
-          <a href="https://www.linkedin.com/in/sravan-jaggala/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-        <div class="badges">
-          <span class="badge">Academic</span>
-          <span class="badge">Power BI</span>
-          <span class="badge">Data Analytics</span>
-        </div>
-      </aside>
-      <main class="main">
-        <section id="about" class="section card reveal">
-          <h2>Profile Summary</h2>
-          <p>Data analytics professional with 7 years of experience in business intelligence, data modeling, and dashboard design using Power BI, SQL, and cloud data sources. Skilled at leading cross-functional teams and delivering end-to-end analytics projects that drive strategic decision-making. Beyond industry expertise, I am eager to contribute to academic research in natural language processing, conversational AI, and generative business intelligence. My goal is to bridge practical business challenges with advanced research, developing intuitive and AI-driven solutions that enhance data visualization and accessibility.</p>
-        </section>
 
-        <section id="achievements" class="section card reveal">
-          <h2>Highlighted Achievements</h2>
-          <ul><li>Developed NLP Q&amp;A models in Power BI</li><li>Built interface for natural language–driven data visualizations</li><li>Custom Power BI Visual Development using ReactJS &amp; TypeScript</li><li>Embedding Power BI Reports into External Websites via Azure App Integration</li><li>Audit Report Development using Power BI REST APIs</li><li>Power BI CI/CD Automation with Azure DevOps</li><li>Navigation Hub Reports &amp; Ad-hoc Reports</li></ul>
-        </section>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <img class="avatar" src="assets/profile.jpg" alt="Profile photo of Sravan Jaggala" onerror="this.outerHTML='<div class=\'avatar\' style=\'display:grid;place-items:center;border:2px dashed var(--border);color:var(--muted)\'>Add Photo</div>'">
+      <div class="meta">Hyderabad, India</div>
+      <div class="links">
+        <a href="tel:+91 98444 34103">+91 98444 34103</a>
+        <a href="mailto:sravan.jaggala@outlook.com">sravan.jaggala@outlook.com</a>
+        <a href="https://www.linkedin.com/in/sravan-jaggala/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="chips">
+        <span class="chip">7+ yrs BI</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">DAX / SQL</span>
+        <span class="chip">Azure DevOps</span>
+      </div>
+    </aside>
 
-        <section id="experience" class="section card reveal">
-          <h2>Professional Experience</h2>
-          <div class="timeline">
-<div class="ti reveal">
+    <main class="main">
+      <section id="about" class="section card">
+        <h2>Profile Summary</h2>
+        <p>Data analytics professional with 7 years of experience in business intelligence, data modeling, and dashboard design using Power BI, SQL, and cloud data sources. Skilled at leading cross-functional teams and delivering end-to-end analytics projects that drive strategic decision-making. Beyond industry expertise, I am eager to contribute to academic research in natural language processing, conversational AI, and generative business intelligence. My goal is to bridge practical business challenges with advanced research, developing intuitive and AI-driven solutions that enhance data visualization and accessibility.</p>
+      </section>
+
+      <section id="achievements" class="section card">
+        <h2>Highlighted Achievements</h2>
+        <ul><li>Developed NLP Q&amp;A models in Power BI</li><li>Built interface for natural language–driven data visualizations</li><li>Custom Power BI Visual Development using ReactJS &amp; TypeScript</li><li>Embedding Power BI Reports into External Websites via Azure App Integration</li><li>Audit Report Development using Power BI REST APIs</li><li>Power BI CI/CD Automation with Azure DevOps</li><li>Navigation Hub Reports &amp; Ad-hoc Reports</li></ul>
+      </section>
+
+      <section id="experience" class="section card">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+<div class="ti">
   <div class="exp-head">
     <div>
       <div class="exp-role">Associate Manager</div>
@@ -67,7 +78,7 @@
   </ul>
 </div>
 
-<div class="ti reveal">
+<div class="ti">
   <div class="exp-head">
     <div>
       <div class="exp-role">Business Consultant Int</div>
@@ -80,7 +91,7 @@
   </ul>
 </div>
 
-<div class="ti reveal">
+<div class="ti">
   <div class="exp-head">
     <div>
       <div class="exp-role">Sr Software Engineer</div>
@@ -93,7 +104,7 @@
   </ul>
 </div>
 
-<div class="ti reveal">
+<div class="ti">
   <div class="exp-head">
     <div>
       <div class="exp-role">Technical Advisor</div>
@@ -106,7 +117,7 @@
   </ul>
 </div>
 
-<div class="ti reveal">
+<div class="ti">
   <div class="exp-head">
     <div>
       <div class="exp-role">Software Engineer Trainee</div>
@@ -118,39 +129,39 @@
     <li>Developed and enhanced Power BI reports; collaborated with senior engineers to deliver analytics solutions.</li>
   </ul>
 </div></div>
-        </section>
+      </section>
 
-        <section id="skills" class="section card reveal">
-          <h2>Key Skills</h2>
-          <div class="kv reveal"><div class="k">Data Analytics Tools</div><div class="v">Power BI, Excel, Power Query, DAX, Tableau (basic)</div></div>
-<div class="kv reveal"><div class="k">Databases</div><div class="v">SQL Server, Oracle, Snowflake, Google Big Query</div></div>
-<div class="kv reveal"><div class="k">Programming</div><div class="v">DAX, T-SQL, Basics of Python (pandas, matplotlib), TypeScript (custom visuals)</div></div>
-<div class="kv reveal"><div class="k">Other Skills</div><div class="v">Data Modeling, ETL, Cloud Platforms, REST APIs, CI/CD with PowerShell &amp; Azure DevOps</div></div>
-        </section>
+      <section id="skills" class="section card">
+        <h2>Key Skills</h2>
+        <div class="kv"><div class="k">Data Analytics Tools</div><div class="v">Power BI, Excel, Power Query, DAX, Tableau (basic)</div></div>
+<div class="kv"><div class="k">Databases</div><div class="v">SQL Server, Oracle, Snowflake, Google Big Query</div></div>
+<div class="kv"><div class="k">Programming</div><div class="v">DAX, T-SQL, Basics of Python (pandas, matplotlib), TypeScript (custom visuals)</div></div>
+<div class="kv"><div class="k">Other Skills</div><div class="v">Data Modeling, ETL, Cloud Platforms, REST APIs, CI/CD with PowerShell &amp; Azure DevOps</div></div>
+      </section>
 
-        <section id="education" class="section card reveal">
-          <h2>Education</h2>
-          <p><strong>Bachelor of Technology</strong> — Computer Science &amp; Engineering</p>
-          <p>JNTU Anantapuramu • Andhra Pradesh, India • Graduated: 2015</p>
-        </section>
+      <section id="education" class="section card">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Technology</strong> — Computer Science &amp; Engineering</p>
+        <p>JNTU Anantapuramu • Andhra Pradesh, India • Graduated: 2015</p>
+      </section>
 
-        <section id="awards" class="section card reveal">
-          <h2>Awards &amp; Achievements</h2>
-          <ul><li>Employee of the Quarter — Mouri Tech (2025)</li><li>GEM &amp; SPOT Awards – Mouri Tech (2024)</li><li>Top Innovator Award — Blue Yonder (2022)</li></ul>
-        </section>
+      <section id="awards" class="section card">
+        <h2>Awards &amp; Achievements</h2>
+        <ul><li>Employee of the Quarter — Mouri Tech (2025)</li><li>GEM &amp; SPOT Awards – Mouri Tech (2024)</li><li>Top Innovator Award — Blue Yonder (2022)</li></ul>
+      </section>
 
-        <section id="contact" class="section card reveal">
-          <h2>Contact</h2>
-          <p><strong>Location:</strong> Hyderabad, India</p>
-          <p><strong>Phone:</strong> <a href="tel:+91 98444 34103">+91 98444 34103</a></p>
-          <p><strong>Email:</strong> <a href="mailto:sravan.jaggala@outlook.com">sravan.jaggala@outlook.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sravan-jaggala/" target="_blank" rel="noopener">https://www.linkedin.com/in/sravan-jaggala/</a></p>
-        </section>
+      <section id="contact" class="section card">
+        <h2>Contact</h2>
+        <p><strong>Location:</strong> Hyderabad, India</p>
+        <p><strong>Phone:</strong> <a href="tel:+91 98444 34103">+91 98444 34103</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sravan.jaggala@outlook.com">sravan.jaggala@outlook.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sravan-jaggala/" target="_blank" rel="noopener">https://www.linkedin.com/in/sravan-jaggala/</a></p>
+      </section>
 
-        <div class="footer">© <span id="year"></span> Sravan Jaggala • Academic Resume</div>
-      </main>
-    </div>
+      <div class="footer">© Sravan Jaggala</div>
+    </main>
   </div>
+
   <script src="assets/script.js"></script>
 </body>
 </html>
